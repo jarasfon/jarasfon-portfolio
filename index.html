@@ -57,8 +57,26 @@
                             <i class="bi bi-arrow-down-right"></i></a></div>
                 </div>
                 <div class="hero-visual" data-aos="fade-left">
-                    <div class="portrait-placeholder image-placeholder"><span class="placeholder-cross">+</span><i
-                            class="bi bi-person-bounding-box"></i><b>พื้นที่รูปโปรไฟล์</b><small>assets/images/profile.jpg</small>
+                    <div class="portrait-placeholder" style="
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: transparent;
+        border: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     ">
+
+                        <img src="assets/images/profile-half.png" alt="Profile" style="
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center bottom;
+     ">
+
                     </div><span class="visual-caption">รูปภาพประจำตัว</span>
                 </div>
             </div>
@@ -411,7 +429,7 @@
                                 <button class="activity-card-trigger" type="button" data-bs-toggle="modal"
                                     data-bs-target="#activityModal" data-title="ถ่ายทอดองค์ความรู้และฝึกอบรม"
                                     data-date="มิถุนายน 2567" data-image="assets/images/activity-01.jpg"
-                                    data-description="กิจกรรมถ่ายทอดองค์ความรู้และแลกเปลี่ยนประสบการณ์จากการเข้าร่วมฝึกอบรม เพื่อส่งเสริมการพัฒนาบุคลากร">
+                                    data-description="กิจกรรมถ่ายทอดองค์ความรู้หลังจากการฝึกอบรมโครงการฝึกอบรมเชิงปฏิบัติการเรื่องการดับเพลิงขั้นต้นและการฝึกซ้อมหนีไฟในอาคารสูงได้จัดการบรรยายเนื้อหาสำคัญที่เกี่ยวข้องกับประเภทของไฟและวิธีการดับไฟในแต่ละประเภท">
 
                                     <div class="activity-card-image">
                                         <img src="assets/images/activity-01.jpg" alt="ถ่ายทอดองค์ความรู้และฝึกอบรม"
@@ -423,7 +441,8 @@
                                             กิจกรรม / การอบรม
                                         </span>
 
-                                        <h3>ถ่ายทอดองค์ความรู้และฝึกอบรม</h3>
+                                        <h3>กิจกรรมถ่ายทอดองค์ความรู้หลัง
+                                            การฝึกอบรม</h3>
 
                                         <div class="activity-card-meta">
                                             <i class="bi bi-calendar3"></i>
@@ -436,12 +455,16 @@
                             <!-- กิจกรรม 2 -->
                             <article class="activity-card">
                                 <button class="activity-card-trigger" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#activityModal" data-title="กิจกรรมของหน่วยงาน"
+                                    data-bs-target="#activityModal"
+                                    data-title="เข้าร่วมพิธีถวายสัตย์ปฏิญาณเพื่อเป็นข้าราชการที่ดีและพลังของแผ่นดิน"
                                     data-date="กรกฎาคม 2567" data-image="assets/images/activity-02.jpg"
-                                    data-description="การเข้าร่วมกิจกรรมต่าง ๆ ของหน่วยงาน เพื่อส่งเสริมความร่วมมือและการทำงานเป็นทีม">
+                                    data-description="เข้าร่วมพิธีถวายสัตย์ปฏิญาณเพื่อเป็นข้าราชการที่ดีและพลังของแผ่นดิน ประจำปี 2567 และร่วมลงนามถวายพระพรชัยมงคลเบื้องหน้าพระฉายาลักษณ์ 
+พระบาทสมเด็จพระปรเมนทรรามาธิบดีศรีสินทรมหาวชิราลงกรณ พระวชิรเกล้าเจ้าอยู่หัว เพื่อแสดงออก
+ถึงความจงรักภักดีและสำนึกในพระมหากรุณาธิคุณเนื่องในโอกาสวันเฉลิมพระชนมพรรษา 28 กรกฎาคม  พ.ศ. 2567">
 
                                     <div class="activity-card-image">
-                                        <img src="assets/images/activity-02.jpg" alt="กิจกรรมของหน่วยงาน"
+                                        <img src="assets/images/activity-02.jpg"
+                                            alt="พิธีถวายสัตย์ปฏิญาณเพื่อเป็นข้าราชการที่ดีและพลังของแผ่นดิน"
                                             loading="lazy">
                                     </div>
 
@@ -450,7 +473,7 @@
                                             กิจกรรม / การอบรม
                                         </span>
 
-                                        <h3>กิจกรรมของหน่วยงาน</h3>
+                                        <h3>พิธีถวายสัตย์ปฏิญาณเพื่อเป็นข้าราชการที่ดี</h3>
 
                                         <div class="activity-card-meta">
                                             <i class="bi bi-calendar3"></i>
@@ -463,13 +486,14 @@
                             <!-- กิจกรรม 3 -->
                             <article class="activity-card">
                                 <button class="activity-card-trigger" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#activityModal" data-title="การอบรมด้านเทคโนโลยี"
-                                    data-date="เมษายน 2569" data-image="assets/images/activity-03.jpg"
-                                    data-description="การเข้าร่วมอบรมและพัฒนาทักษะด้านเทคโนโลยีสารสนเทศ เพื่อนำความรู้มาประยุกต์ใช้ในการปฏิบัติงาน">
+                                    data-bs-target="#activityModal" data-title="กิจกรรมวันสงกรานต์
+                                            สืบสานประเพณีไทย" data-date="เมษายน 2569"
+                                    data-image="assets/images/activity-03.jpg" data-description="    เพื่อสืบสานประเพณีไทย สรงน้ำพระและรดน้ำดำหัวขอพรผู้บริหารอีกทั้งยังแสดงความเคารพต่อผู้ใหญ่ในองค์กร
+">
 
                                     <div class="activity-card-image">
-                                        <img src="assets/images/activity-03.jpg" alt="การอบรมด้านเทคโนโลยี"
-                                            loading="lazy">
+                                        <img src="assets/images/activity-03.jpg" alt="กิจกรรมวันสงกรานต์
+                                            สืบสานประเพณีไทย" loading="lazy">
                                     </div>
 
                                     <div class="activity-card-body">
@@ -477,11 +501,12 @@
                                             กิจกรรม / การอบรม
                                         </span>
 
-                                        <h3>การอบรมด้านเทคโนโลยี</h3>
+                                        <h3>กิจกรรมวันสงกรานต์
+                                            สืบสานประเพณีไทย</h3>
 
                                         <div class="activity-card-meta">
                                             <i class="bi bi-calendar3"></i>
-                                            <span>เมษายน 2569</span>
+                                            <span>เมษายน 2568</span>
                                         </div>
                                     </div>
                                 </button>
@@ -490,13 +515,14 @@
                             <!-- กิจกรรม 4 -->
                             <article class="activity-card">
                                 <button class="activity-card-trigger" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#activityModal" data-title="การพัฒนาทักษะวิชาชีพ"
-                                    data-date="กิจกรรมที่ 04" data-image="assets/images/activity-04.jpg"
-                                    data-description="กิจกรรมเพื่อพัฒนาความรู้ ความสามารถ และทักษะในการทำงาน">
+                                    data-bs-target="#activityModal"
+                                    data-title="กิจกรรมถ่ายทอดองค์ความรู้หลัง การฝึกอบรม" data-date="กิจกรรมที่ 04"
+                                    data-image="assets/images/activity-04.jpg"
+                                    data-description="กิจกรรมถ่ายทอดองค์ความรู้หลังจากการฝึกอบรมโครงการฝึกอบรมเชิงปฏิบัติการ หลักสูตรการประยุกต์ใช้ Application รุ่น ที่ 4 เนื้อหาสำคัญที่เกี่ยวข้องกับการใช้งานแอปพลิเคชันต่าง ๆ สำหรับการพัฒนาสื่อประชาสัมพันธ์ในรูปแบบดิจิทัล รวมถึงการนำระบบปัญญาประดิษฐ์ AI ประยุกต์ใช้ให้เกิดประโยชน์">
 
                                     <div class="activity-card-image">
-                                        <img src="assets/images/activity-04.jpg" alt="การพัฒนาทักษะวิชาชีพ"
-                                            loading="lazy">
+                                        <img src="assets/images/activity-04.jpg"
+                                            alt="กิจกรรมถ่ายทอดองค์ความรู้หลัง การฝึกอบรม" loading="lazy">
                                     </div>
 
                                     <div class="activity-card-body">
@@ -504,11 +530,11 @@
                                             กิจกรรม / การอบรม
                                         </span>
 
-                                        <h3>การพัฒนาทักษะวิชาชีพ</h3>
+                                        <h3>กิจกรรมถ่ายทอดองค์ความรู้หลัง การฝึกอบรม</h3>
 
                                         <div class="activity-card-meta">
                                             <i class="bi bi-calendar3"></i>
-                                            <span>กิจกรรมที่ 04</span>
+                                            <span>เมษายน 2569</span>
                                         </div>
                                     </div>
                                 </button>
@@ -595,8 +621,8 @@
     </main>
     <footer class="site-footer">
         <div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© <span
-                    id="year"></span> Jarasfon Pulakhon. All rights reserved.</span><span>Designed with <i
-                    class="bi bi-heart-fill accent-text"></i> &amp; Bootstrap</span></div>
+                    id="year"></span> Jarasfon Pulakhon. All rights reserved.</span><span>Designed with Jarasfon &amp;
+                Bootstrap</span></div>
     </footer>
     <button aria-label="กลับขึ้นด้านบน" class="back-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
