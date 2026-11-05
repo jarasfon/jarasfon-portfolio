@@ -772,3 +772,174 @@
 }
 
 /* ------ */
+
+
+/* skill icon */
+
+
+/* =========================================
+   TECHNOLOGY STACK
+========================================= */
+
+#skills .tech-stack-section {
+    margin-top: 60px;
+}
+
+#skills .tech-stack-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#skills .tech-eyeline {
+    display: block;
+    margin-bottom: 10px;
+    color: #1765c1;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#skills .tech-stack-heading h3 {
+    color: #18385f;
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#skills .tech-stack-heading p {
+    color: #60758d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Grid Layout */
+#skills .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* Technology Card */
+#skills .tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    min-height: 180px;
+    padding: 24px 12px;
+
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e1ebf6;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 16px rgba(23, 101, 193, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+#skills .tech-card:hover {
+    transform: translateY(-6px);
+    border-color: #9cc9f8;
+    box-shadow: 0 12px 28px rgba(23, 101, 193, 0.13);
+}
+
+/* Icon */
+#skills .tech-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 68px;
+    height: 68px;
+    margin-bottom: 16px;
+
+    background: #eef6ff;
+    border-radius: 16px;
+}
+
+#skills .tech-icon i {
+    font-size: 42px;
+    line-height: 1;
+}
+
+#skills .tech-icon img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+/* Text */
+#skills .tech-card h4 {
+    margin: 0 0 8px;
+    color: #18385f;
+    font-size: 16px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+#skills .tech-card span {
+    color: #75889d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    #skills .tech-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    #skills .tech-stack-section {
+        margin-top: 40px;
+    }
+
+    #skills .tech-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    #skills .tech-card {
+        min-height: 155px;
+        padding: 20px 10px;
+    }
+
+    #skills .tech-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    #skills .tech-icon i {
+        font-size: 36px;
+    }
+
+    #skills .tech-icon img {
+        width: 38px;
+        height: 38px;
+    }
+
+    #skills .tech-card h4 {
+        font-size: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #skills .tech-card {
+        transition: none;
+    }
+
+    #skills .tech-card:hover {
+        transform: none;
+    }
+}
+
+
+/* --------- */
